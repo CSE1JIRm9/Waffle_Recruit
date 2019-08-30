@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+   <head>
+  <title>Try_that_Waffle</title>
+  <meta charset="utf-8">
+  <style>
+    button{
+      background:#CCEEFF;
+      color:#fff;
+      border:1px;
+      position:relative;
+      font-size:1em;
+      padding:15px;
+      cursor:pointer;
+      transition:800ms ease all;
+      outline:none;
+    }
+
+    button:hover{
+      background:#EFFDFD;
+      color: pink;;
+    }
+    button:before,button:after{
+      content:'';
+      position:absolute;
+      top:0;
+      right:0;
+      height:2px;
+      width:0;
+      background: pink;
+      transition:400ms ease all;
+    }
+    button:after{
+      right:inherit;
+      top:inherit;
+      left:0;
+      bottom:0;
+    }
+    button:hover:before,button:hover:after{
+      width:100%;
+      transition:800ms ease all;
+    }
+
+    *{
+      font-family:"나눔고딕","Times New Roman"
+        }
+
+    .logo {
+      margin-top:60px;
+      padding-right:5px;
+      text-align: right;
+    }
+    .logo div:hover {
+      color:pink;
+    }
+
+    .content {
+      font-size:200%;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      overflow: hidden;
+      margin: 0;
+      background-color: #CCEEFF;
+    }
+
+    #grid{
+      border:1px solid #71C8CE;
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;}
+
+    .menu li{
+      display: block;
+      text-align: center;
+      color:#fff;
+      text-decoration: none;
+    }
+
+     #name {
+      font-size:400%;
+      color: #71C8CE;
+    }
+
+    p{
+      font-size: 70%;
+      margin-top:10px;
+      margin-bottom:100px;
+    }
+
+    .phone{
+      color: pink;
+    }
+    .mail{
+      color:#CCEEFF;
+    }
+    .house{
+      color:#FD4A71;
+    }
+  </style>
+</head>
+    <body>
+  <div class="menu">
+    <ul id=grid>
+      <li><button onclick="window.open('https://www.facebook.com/profile.php?id=100033372438578')">CSE1JIrm9</button></li>
+      <li><button onclick="location.href='main.html'">Home</button></li>
+      <li><button onclick="location.href='introduction.html'">Self_Introduction</button></li>
+      <li><button onclick="location.href='TMI.html'">その他</button></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>その他 : 그 외..</h1>
+<br>
+    <h2>연락처</h2>
+    <p class="phone">Mobile:010-3623-1620<p>
+    <h2>E-mail</h2>
+    <p class="mail">wlgur7238@snu.ac.kr</p>
+    <h2>사는곳</h2>
+    <p class="house">☆상취방☆</p>
+     </div>
+  <div class="logo">
+    <div>Waffle_Studio_Recruitment<br><br>
+    왼쪽 상단은 페이스북 계정으로 이어지는 링크입니다.</div>
+  </div>
+
+
+</body>
+</html>

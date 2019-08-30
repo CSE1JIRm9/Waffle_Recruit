@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+   <head>
+  <title>Try_that_Waffle</title>
+  <meta charset="utf-8">
+  <style>
+    button{
+      background:#CCEEFF;
+      color:#fff;
+      border:1px;
+      position:relative;
+      font-size:1em;
+      padding:15px;
+      cursor:pointer;
+      transition:800ms ease all;
+      outline:none;
+    }
+
+    button:hover{
+      background:#EFFDFD;
+      color: pink;;
+    }
+    button:before,button:after{
+      content:'';
+      position:absolute;
+      top:0;
+      right:0;
+      height:2px;
+      width:0;
+      background: pink;
+      transition:400ms ease all;
+    }
+    button:after{
+      right:inherit;
+      top:inherit;
+      left:0;
+      bottom:0;
+    }
+    button:hover:before,button:hover:after{
+      width:100%;
+      transition:800ms ease all;
+    }
+
+    *{
+      font-family:"나눔고딕","Times New Roman"
+        }
+
+    .logo {
+      margin-top:60px;
+      padding-right:5px;
+      text-align: right;
+    }
+    .logo div:hover {
+      color:pink;
+    }
+
+    .content {
+      font-size:200%;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      overflow: hidden;
+      margin: 0;
+      background-color: #CCEEFF;
+    }
+
+    #grid{
+      border:1px solid #71C8CE;
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;}
+
+    .menu li{
+      display: block;
+      text-align: center;
+      color:#fff;
+      text-decoration: none;
+    }
+
+     #name {
+      font-size:400%;
+      color: #71C8CE;
+    }
+
+  </style>
+</head>
+    <body>
+  <div class="menu">
+    <ul id=grid>
+      <li><button onclick="window.open('https://www.facebook.com/profile.php?id=100033372438578')">CSE1JIrm9</button></li>
+      <li><button onclick="location.href='main.html'"">Home</button></li>
+      <li><button onclick="location.href='introduction.html'"">Self_Introduction</button></li>
+      <li><button onclick="location.href='TMI.html'">その他</button></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    컴퓨터공학부<br><br><br>  19학번<br><br><br> <strong id="name">강지혁</strong><br>
+    <br><br>입니다.
+    </div>
+  <div class="logo">
+    <div>Waffle_Studio_Recruitment<br><br>
+    왼쪽 상단은 페이스북 계정으로 이어지는 링크입니다.</div>
+  </div>
+
+
+</body>
+</html>
